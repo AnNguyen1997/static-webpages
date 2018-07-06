@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    <main id="main">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <form id="survey-form" action="Survey.html">
+        <div class="wrapper">
+            <label id="name-label" class="text-labels" for="name">* Name</label>
+            <input id="name" class="input-fields" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="wrapper">
+            <label id="email-label" class="text-labels" for="email">* Email</label>
+            <input id="email" class="input-fields" type="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="wrapper">
+          <label id="number-label" class="text-labels" for="number">* Age</label>
+          <input id="number" class="input-fields" type="number" min="1" max="200" placeholder="Age" required>
+        </div>
+        <div class="wrapper">
+          <label id="dropdown-label" class="text-labels" for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" class="input-fields">
+              <option disabled>Select an option</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer Not to Say</option>
+              <option>Other</option>
+            </select>
+        </div>
+        <div class="wrapper">
+        <label class="text-labels">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+          <div class="answers">
+            <fieldset id="group1">
+              <input id="definitely" type="radio" name="group1" value="definitely">
+              <label for="definitely">Definitely</label>
+              <input id="maybe" type="radio" name="group1" value="maybe">
+              <label for="maybe">Maybe</label>
+            </fieldset>
+            <fieldset id="group2">
+              <input id="notsure" type="radio" name="group2" value="not-sure">
+              <label for="notsure">Not Sure</label>
+              <input id="no" type="radio" name="group2" value="no">
+              <label for="no">No</label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="wrapper">
+        <label class="text-labels" for="prefer">What do you like most in FCC:</label>
+          <select id="prefer" class="input-fields">
+           <option disabled>Select an option</option>
+           <option>Challenges</option>
+           <option>Projects</option>
+           <option>Community</option>
+           <option>Open Source</option>
+          </select>
+        </div>
+        <div class="wrapper">
+          <label class="text-labels">Things that should be improved in the future (Check all that apply):</label>
+          <div class="answers">
+            <div>
+              <input id="frontend" type="checkbox" name="improve" value="frontend">
+              <label for="frontend">Front-end Projects</label>
+            </div>
+            <div>
+              <input id="backend" type="checkbox" name="improve" value="backend">
+              <label for="backend">Back-end Projects</label>
+            </div>
+            <div >
+              <input id="datavisual" type="checkbox" name="improve" value="datavisual">
+              <label for="datavisual">Data Visualization</label>
+            </div>
+            <div>
+              <input id="challenges" type="checkbox" name="improve" value="challenges">
+              <label for="challenges">Challenges</label>
+            </div>
+            <div>
+              <input id="opensource" type="checkbox" name="improve" value="opensource">
+              <label for="opensource">Open Source Community</label>
+            </div>
+            <div>
+              <input id="gitter" type="checkbox" name="improve" value="gitter">
+              <label for="gitter">Gitter help rooms</label>
+            </div>
+            <div>
+              <input id="videos" type="checkbox" name="improve" value="videos">
+              <label for="videos">Videos</label>
+            </div>
+            <div>
+              <input id="meetups" type="checkbox" name="improve" value="meetups">
+              <label for="meetups">City Meetups</label>
+            </div>
+            <div>
+              <input id="wiki" type="checkbox" name="improve" value="wiki">
+              <label for="wiki">Wiki</label>
+            </div>
+            <div>
+              <input id="forum" type="checkbox" name="improve" value="forum">
+              <label for="forum">Forum</label>
+            </div>
+            <div>
+              <input id="courses" type="checkbox" name="improve" value="courses">
+              <label for="courses">Additional Courses</label>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+        <label class="text-labels" for="comment">Any Comments or Suggestions?</label>
+        <textarea class="input-fields" rows="5" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
